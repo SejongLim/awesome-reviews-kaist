@@ -19,7 +19,7 @@ Traffic Forecasting 은 ITS에서 가장 도전적인 과제 중 하나이며, �
 
 시간이 흐르고 발전된 deep learning 을 통해 점차 sapatial dependency 를 구현하기 시작하였는데, 이를 위해 CNN과 RNN 등의 기법들이 시도 되었습니다. 그러나 CNN은 비정형적인 도로 체계가 가지는 non-Euclidean 한 상관관계에 한계를 가지고 있었다. 이러한 문제를 해결하기 위해 GCNs에 RNNs 과 CNNs 를 적용하였고, 여기에 사전에 알고 있는 도로 네트워크 정보를 삽입하여 nodes 끼리의 상관관계를 담아낼 수 있었다. 하지만 이 역시 두가지 문제점을 가지고 있었습니다.
 
-![image-20220605213755779](C:\Users\Sejong Lim\AppData\Roaming\Typora\typora-user-images\image-20220605213755779.png)
+![](../../.gitbook/2022-spring-assets/sejong/image1.png)
 
 1. 첫째로 위에서 언급한 GCNs의 접근은 고정된 weighted graph를 기반으로 한 GCNs를 통해서 saptial dependency를 구현하는 방식이었습니다. 하지만 두쌍의 nodes 사이 상관관계를 담고 있는 edges는 더욱 복잡하며 edges들 끼리도 역시 상호작용을 합니다. Figure1에서 볼 수 있듯 특정 도로에서 인접한 두 edge들은 서로 상관관계를 가지고 있으며, 이러한 상관관계는 현재 교통 상황에 따라 변하면서 서로 상호작용하게 됩니다. 만일 edge들의 정보에 노드사이의 거리 등과 같은 고정된 weights만 넣어서 GCN을 사용한다면, 이는 edge들끼리의 복잡도와 상호작용을 무시하는 셈이 되고 맙니다.
 
