@@ -37,6 +37,7 @@
   * [Hypergraph with DHT](paper-review/2022-spring/neurlps-2021-hypergraphs_with_dht.md)
   * [E(n) Equivariant Graph Neural Networks](paper-review/2022-spring/icml-2021-e(n)%20equivariant%20graph%20neural%20networks.md)
   * [DataAug](paper-review/2022-spring/aaai-2020-dataaugmentationforgraph.md)
+  * [GraphTrafficForecasting](paper-review/2022-spring/aaai-2020-multirangeattentivebicomponentgraphconvolutionalnetworkfortrafficforecastig.md)
   
 ## How to contribute
 
